@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500&display=swap" rel="stylesheet">
+    <title>Hangman game</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">HANGMAN GAME</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <button class="btn btn-outline-success" type="submit">
+                        <i class="fa fa-question-circle"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-3">
+        <div class="card card-style">
+            <div class="card-body text-center">
+                <h2>Hint</h2>
+                <p id="hintSection" style="font-size: 25px;"></p>
+                <div id="container">
+                    <canvas id="hangman" width="180" height="250"></canvas>
+                </div>
+                <p id="answerSection" style="font-size: 20px"></p>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Guess a letter" id="wordguess" style="border: 2px solid black; border-radius: 20px; font-size: 22px;">
+                </div>
+                <button class="btn btn-md btn-primary text-center" id="checkmyguess">
+                    check <i class="fa fa-check"></i></button>
+                <p class="my-3"id="guess" style="font-size: 20px;"></p>
+                <p id="totalscore" style="font-size: 20px;"></p>
+                <button class="btn btn-md btn-primary" id="restart" style="float: right;">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <script src="https://kit.fontawesome.com/5e87775eec.js" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
